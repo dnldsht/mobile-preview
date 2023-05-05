@@ -8,7 +8,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deploy": "NUXT_APP_BASE_URL=/mobile-preview/ nuxt generate && push-dir --dir=.output/public --branch=gh-pages --cleanup"
+    "deploy": "NUXT_APP_BASE_URL=/mobile-preview/ nuxt generate && push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.38.5",
