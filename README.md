@@ -1,42 +1,15 @@
-# Nuxt 3 Minimal Starter
+# Mobile Previewer
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Mobile Previewer is a free online tool that allows you to preview any website on popular mobile devices such as iPhone, iPad, Android phones, and tablets. Simply enter the website URL and select the device you want to preview it on, and our tool will generate a high-fidelity preview of the website as it would appear on that device. Use Mobile Previewer to optimize your website for mobile users and improve your mobile SEO.
 
-## Setup
+## Features
+- Preview any website on popular mobile devices
+- Free to use
+- Easy to use, no registration required
 
-Make sure to install the dependencies:
+## Usage
+To use Mobile Previewer, simply navigate to our website ---, enter the website URL you want to preview and select the device you want to preview it on.
 
-```bash
-# yarn
-yarn install
 
-# npm
-npm install
-
-# pnpm
-pnpm install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`
-
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## License
+Mobile Previewer is open-source software licensed under the MIT license.
