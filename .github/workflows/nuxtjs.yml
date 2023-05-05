@@ -61,9 +61,9 @@ jobs:
           static_site_generator: nuxt
       - name: Restore cache
         uses: actions/cache@v3
-        with:
-          path: |feat:
-            dist
+        with: 
+          path: |
+            ./output
             .nuxt
           key: ${{ runner.os }}-nuxt-build-${{ hashFiles('dist') }}
           restore-keys: |
