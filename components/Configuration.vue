@@ -21,7 +21,7 @@ function changeDimensions({ width, height }) {
   <div class="w-100">
     <v-text-field
       v-model.lazy="configuration.src"
-      label="Insert url"
+      label="Website URL"
       type="url"
       autocomplete="off"
     />
