@@ -8,7 +8,7 @@ Mobile Previewer is a free online tool that allows you to preview any website on
 - Easy to use, no registration required
 
 ## Usage
-To use Mobile Previewer, simply navigate to our website ---, enter the website URL you want to preview and select the device you want to preview it on.
+To use Mobile Previewer, simply navigate to our website https://dnldsht.github.io/mobile-preview, enter the website URL you want to preview and select the device you want to preview it on.
 
 
 ## License
