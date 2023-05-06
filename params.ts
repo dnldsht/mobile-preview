@@ -3,7 +3,12 @@ export interface Device {
   width: number
   height: number
   custom?: boolean
+  slug: string
 }
+
+const slugify = (str: string) => str.toLowerCase().replace(/\s/g, '-')
+
+export const defaultUrl = 'https://example.com'
 
 export const devices: Array<Device> = [
   {
@@ -37,4 +42,6 @@ export const devices: Array<Device> = [
     width: 393,
     height: 851,
   },
-]
+].map(d => ({ ...d, slug: slugify(d.title) }))
+
+export const defaultDevice = devices[0]

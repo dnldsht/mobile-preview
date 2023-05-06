@@ -11,9 +11,14 @@ const scales = [
 
 const configuration = useConfiguration()
 
-function changeDimensions({ width, height }) {
-  configuration.value.width = width
-  configuration.value.height = height
+watch(() => configuration.value.device, changeDevice, { immediate: true })
+
+function changeDevice(slug) {
+  const device = devices.find(device => device.slug === slug)
+  if (device) {
+    configuration.value.width = device.width
+    configuration.value.height = device.height
+  }
 }
 </script>
 
@@ -31,9 +36,8 @@ function changeDimensions({ width, height }) {
         v-model="configuration.device"
         class="mr-2"
         label="Device"
-        return-object
+        item-value="slug"
         :items="devices"
-        @update:model-value="changeDimensions"
       />
 
       <v-select
