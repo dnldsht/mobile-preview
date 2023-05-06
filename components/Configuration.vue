@@ -20,6 +20,12 @@ function changeDevice(slug) {
     configuration.value.height = device.height
   }
 }
+
+const snackbar = ref(false)
+function share() {
+  navigator.clipboard.writeText(window.location.href)
+  snackbar.value = true
+}
 </script>
 
 <template>
@@ -63,6 +69,18 @@ function changeDevice(slug) {
         autocomplete="off"
       />
     </div>
+    <v-btn block variant="tonal" @click="share">
+      Share
+    </v-btn>
+    <v-snackbar
+      v-model="snackbar"
+      :timeout="2000"
+      color="primary"
+      variant="tonal"
+      location="bottom right"
+    >
+      Url copied to clipboard
+    </v-snackbar>
 
     <div class="text-caption text-center mt-4">
       Made with ❤️ by <a href="https://github.com/dnldsht" target="_blank">Donald Shtjefni</a>
