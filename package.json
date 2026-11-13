@@ -10,7 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.38.5",
+    "@antfu/eslint-config": "^0.43.0",
     "@types/node": "^18",
     "eslint": "^8.39.0",
     "nuxt": "^3.4.3",
